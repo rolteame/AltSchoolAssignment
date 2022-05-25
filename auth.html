@@ -9,9 +9,40 @@
   <title>Login / Register</title>
 </head>
 <body>
+  <header>
+    <nav class="navigation">
+      <span class="logo">Rotimi..</span>
+      <ul>
+        <li class="nav-item"><a href="index.html">About Me</a></li>
+        <li class="nav-item"><a href="index.html#goals">Goals</a></li>
+        <li class="nav-item"><a href="index.html#edu-certs">Education & Certificates</a></li>
+        <li class="nav-item"><a href="index.html#experience">Experience</a></li>
+        <li class="nav-item"><a href="index.html#contact">Contact Me</a></li>
+        <li class="nav-item"><a href="/auth.html">Login / Register</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="auth" id="auth">
-    
+    <div class="toggle" id="toggle">
+      <input type="button" class="toggle-button" id="login" value="Login">
+      <input type="button" class="toggle-button" id="register" value="Register">
+    </div>
+    <div class="form-wrapper">
+      <form class="form-container" id="formContainer">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="username" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" required>
+        </div>
+        <div>
+          <button class="submit" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
   </section>
-  <script src="script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
